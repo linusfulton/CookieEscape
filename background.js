@@ -1,7 +1,3 @@
-let color = '#3aa757';
-
-chrome.runtime.onInstalled.addListener(() =>{
-    chrome.storage.sync.set({color});
-    console.log('Default Background color set to %cgreen', 'color: ${color}');
-
-});
+chrome.cookies.onChanged.addListener(function(info) {
+    console.log("onChanged" + JSON.stringify(info));
+  });

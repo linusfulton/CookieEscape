@@ -6,7 +6,11 @@
     "background": {
         "service_worker": "background.js"
     },
-    "permissions": ["cookies", "tabs", "http://*/*", "https://*/*"],
+    "permissions": ["cookies", "tabs"],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
