@@ -1,10 +1,9 @@
-let changeColor = document.getElementById("changeColor");
+let changeCookie = document.getElementById("changeCookies");
 
-/*chrome.storage.sync.get("color", ({ color }) => {
-  changeColor.style.backgroundColor = color;
-
-});*/
-
-function hallo(){
-    console.log("hallo");
+function change() {
+    console.log("The content changed ... ");
 }
+
+changeCookie.addEventListener("click", "change");
+
+//add some functions for Button here
