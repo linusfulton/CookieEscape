@@ -21,15 +21,36 @@ second.addEventListener('click', () => {
   chrome.runtime.sendMessage({message: 'yo check the storage'}, res => console.log(res));
   console.log('Isentthemessage');
 })*/
+//const orfloaded = new XMLHttpRequest();
+//const loadedUrl='https://sport.orf.at/stories/3076970/';
+//orfloaded.open("Get", loadedUrl);
+//if(orfloaded.readyState === '4'){
+  //console.log(orfloaded.readyState);
+  
+  //}else{
+  //  console.log("readystate is not 4");
+  //}
+document.querySelector("#ds-more").click()
+//window.setTimeout(function(), milliseconds);
 
+/*if(){
+  console.log("waiting 0.5s");
+  wait(0.5);
+  if(document.querySelector("#ds-accept-settings").click()){
+  console.log("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHSSSSSSSSSSSSSSDDDSDASDAWEFLIJAHJLFIO");
+  }else{
+    console.log("nothing happend");
+  }
+}
 
+*/
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse)=>{
   console.log(request);
   if(request.message==="you are on sport.orf.at"){
     console.log(request.message);
     const Http = new XMLHttpRequest();
-    const Initiator ="main.js?v=2021050411-310:827";
+    //const Initiator ="main.js?v=2021050411-310:827";
     const url='https://cookiedispenser.orf.at/oon-ds-banner-c/short/closed';
     Http.open("GET", url);
     
